@@ -32,11 +32,21 @@
                 <li><a href="#">Courses</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
-            <a href="/auth/register.html" class="register">log in</a>
+            <a href="/auth/register.html" class="register">register</a>
         </div>
     </nav>
 </header>
 <section class="contain">
+    <div class="card" id="card">
+        <div class="warning">
+            <button id="close" class="close">
+                cerrar
+            </button>
+            <h3 class="textwarn">Usa estos datos para iniciar sesion</h3>
+            <h4>Usuario: adolfking</h4>
+            <h4>contraseña: 12345678</h4>
+        </div>
+    </div>
     <form id="formaction" class="form__container">
         <div class="form__group">
             <label for="">Username</label>
@@ -55,5 +65,13 @@
 
 <script src="../js/main.js"></script>
 <script src="../js/validlogin.js"></script>
+<script>
+    const close = document.getElementById("close")
+const ventana = document.getElementById("card")
+close.addEventListener("click", () =>{
+    ventana.classList.toggle("inactive")
+})
+
+</script>
 </body>
 </html>

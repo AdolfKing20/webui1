@@ -21,5 +21,3 @@ btnMore.addEventListener("click", () => {
 
 });
 
-
-
