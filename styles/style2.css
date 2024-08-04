@@ -1,0 +1,54 @@
+:root {
+    --rosa : #a460f9;
+    --dark: #181818;
+    --rosablur: rgba(164, 96, 249, .5);
+}
+
+.contain{
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+    margin-top: 10dvh;
+    padding: 0 1rem;
+    height: 90dvh;
+}
+
+.form__container{
+    margin: auto;
+    padding: 1rem;
+    width: 100%;
+    max-width: 50rem;
+    border: 1px solid var(--rosa);
+    border-radius: 2rem;
+}
+
+.form__group{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: .4rem;
+    margin-bottom: 1rem;
+}
+
+.form__group input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--rosa);
+    padding-bottom: .3rem;
+    padding-top: .4rem;
+    padding-left: 1rem;
+    color: #ccc;
+    font-size: 1rem;
+    outline: none;
+}
+.btn{
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.loginnow{
+    color: #ccc;
+    text-align: center;
+    margin-top: .4rem;
+    text-transform: capitalize;
+}

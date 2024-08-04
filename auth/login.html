@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style2.css">
+</head>
+<body>
+    <header class="header__container">
+        <nav class="nav__container">
+
+        
+        <div class="logo">
+            <h1>AdolfKing</h1>
+        </div>
+
+        <button class="menu" id="hamburger">
+            <svg  class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+              </svg>
+        </button>
+
+        <div class="navbar__container" id="menulist">
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="../#2645845">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <a href="/auth/register.html" class="register">log in</a>
+        </div>
+    </nav>
+</header>
+<section class="contain">
+    <form id="formaction" class="form__container">
+        <div class="form__group">
+            <label for="">Username</label>
+            <input type="text" id="username" placeholder="Username">
+            <small id="error" class="error"></small>
+        </div>
+        <div class="form__group">
+            <label for="">Password</label>
+            <input type="password" id="password" placeholder="Password">
+            <small id="errorpass" class="error"></small>
+        </div>
+        <button type="submit" class="readmore btn">Log In</button>
+        <p class="loginnow">Register now</p>
+    </form>
+</section>
+
+<script src="../js/main.js"></script>
+<script src="../js/validlogin.js"></script>
+</body>
+</html>
