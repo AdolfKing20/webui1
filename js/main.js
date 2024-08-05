@@ -11,7 +11,7 @@ hamburger.addEventListener("click", () => {
 
 btnMore.addEventListener("click", () => {
     readMore.classList.toggle("active");
-
+    // con innerHTML hago que cada que le haga click en el boton de leer mas, cambie su texto a leer menos jaja
     if (readMore.classList.contains("active")) {
         btnMore.innerHTML = "Read less";
     } else {
