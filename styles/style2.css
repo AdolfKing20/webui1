@@ -90,9 +90,17 @@
 
 .loginnow{
     color: #ccc;
-    text-align: center;
-    margin-top: .4rem;
+    display: flex;
+    margin: auto;
+    margin-top: .8rem;
+    font-size: 1.1rem;
+    border-bottom: .5px solid var(--rosa);
+    width: 7rem;
+    padding-bottom: .2rem;
     text-transform: capitalize;
 }
 
+.loginnow:hover{
+    color: white;
+}
 

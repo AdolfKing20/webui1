@@ -23,3 +23,23 @@ localStorage.setItem('login_success', JSON.stringify(validUser))
     errorPass.innerHTML = ""
     
 })
+
+
+const formRecuperation = document.getElementById("formrecuperation");
+
+formRecuperation.addEventListener("submit", e => {
+    e.preventDefault();
+    const errorRec = document.getElementById("errorRec");
+    const userRec = document.getElementById("userRec").value;
+    const Users = JSON.parse(localStorage.getItem('users')) || [];
+
+    errorRec.innerHTML = "";
+
+    const searchValid = Users.find(user => user.username === userRec);
+
+    if(!searchValid){
+        return errorRec.innerHTML = `Usuario no encontrado`;
+    }
+
+    alert(`Bien! Tu contraseña es: ${searchValid.password}`);
+});
